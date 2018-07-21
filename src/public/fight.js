@@ -5,7 +5,7 @@ import { delay } from './my-utils';
  * @param {ImprovedFighter} improvedFighter 
  * @param {Array<Number>} points 
  */
-export async function fight(fighter, improvedFighter, ...points) {
+async function fight(fighter, improvedFighter, ...points) {
   for (let point of points) {
     fighter.hit(improvedFighter, point);
 
@@ -24,3 +24,5 @@ export async function fight(fighter, improvedFighter, ...points) {
     await delay(1000);
   }
 }
+
+export { fight };

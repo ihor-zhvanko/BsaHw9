@@ -1,6 +1,6 @@
 import { Fighter } from './fighter';
 
-export class ImprovedFighter extends Fighter {
+class ImprovedFighter extends Fighter {
   /**
    * @param {String} name
    * @param {Number} power
@@ -18,3 +18,5 @@ export class ImprovedFighter extends Fighter {
     this.hit(enemy, point * 2);
   }
 }
+
+export { ImprovedFighter };

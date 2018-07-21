@@ -1,4 +1,4 @@
-export function log(msg) {
+function log(msg) {
   let browserLog = document.getElementById('browserConsole');
   browserLog.innerHTML += `
     <hr/>
@@ -6,8 +6,10 @@ export function log(msg) {
   `;
 }
 
-export function delay(miliseconds) {
+function delay(miliseconds) {
   return new Promise((resolve) => {
     setTimeout(() => { resolve() }, miliseconds);
   });
 }
+
+export { log, delay };

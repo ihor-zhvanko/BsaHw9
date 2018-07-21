@@ -1,6 +1,6 @@
 import { log } from './my-utils';
 
-export class Fighter {
+class Fighter {
   /**
    * @param {String} name
    * @param {Number} power
@@ -57,3 +57,5 @@ export class Fighter {
     });
   }
 }
+
+export { Fighter };
